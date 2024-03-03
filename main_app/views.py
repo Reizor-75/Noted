@@ -5,6 +5,10 @@ from .models import Note
 def home(request):
   return render(request, 'home.html')
 
-def notes_index(request):
+def note_index(request):
   notes = Note.objects.all()
-  return render(request, 'notes/index.html', { 'notes': notes })
+  return render(request, 'note/index.html', { 'notes': notes })
+
+def note_detail(request, note_id):
+  note = Note.objects.get(id=note_id)
+  return render(request, 'note/detail.html', { 'note': note })

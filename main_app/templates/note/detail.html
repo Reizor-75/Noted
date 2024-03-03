@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block head %}
+<link 
+  rel="stylesheet" 
+  type="text/css" 
+  href=""
+/>
+{% endblock %}
+
+{% block content %}
+
+<section class="note-container">
+  <h1>{{ note.subject }}</h1>
+  <div class="note-details">
+    <div class="left top">
+      <h2 class="note-title">Title: {{note.title}}</h2>
+      <h2 class="note-title">Date: {{note.date}}</h2>
+    </div>
+    <div class="right top">
+      <h2 class="note-title">To Do: No todos</h2>
+    </div>
+
+    <div class="note-body">
+      <div class="key-body">
+        <h2 class="key-title">Key: </h2>
+        <div class="key-list">{{note.key}}</div>
+      </div>
+      <div class="content-body">
+        <h2 class="content-title">Content:</h2>
+        <p>{{note.content}}</p>
+      </div>
+    </div>
+    <div class="note-bottom">
+      <h2 class="summary-title">Summary:</h2>
+      <p>{{note.summary}}</p>
+    </div>
+    <div class="user-buttons">
+      <div class="edit-delete">
+        <h4>
+          <a href="">✏️</a>
+          <a href="">🗑️</a>
+        </h4>
+      </div>
+      <div class="next-note">
+        <h4>Next ➡️</h4>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+{% endblock %}
