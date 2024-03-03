@@ -6,7 +6,7 @@ from django.contrib.auth.models import User
 class Note(models.Model):
   title = models.CharField(max_length=100)
   subject = models.CharField(max_length=100)
-  date = models.DateField("Creation Date")
+  date = models.DateField("Class Date")
   key = models.CharField(max_length=100)
   content = models.TextField(max_length=1000)
   summary = models.TextField(max_length=1000)  

@@ -12,7 +12,10 @@
 {% block content %}
 
 <section class="note-container">
-  <h1>{{ note.subject }}</h1>
+  <div class="note-header">
+    <h1>{{ note.subject }}</h1>
+    <a href="{% url 'note-index' note.subject %}">Go Back</a>
+  </div>
   <div class="note-details">
     <div class="left top">
       <h2 class="note-title">Title: {{note.title}}</h2>
