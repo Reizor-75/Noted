@@ -5,8 +5,12 @@ from .models import Note
 def home(request):
   return render(request, 'home.html')
 
-def note_index(request):
-  notes = Note.objects.all()
+def note_subjects(request):
+  subjects = Note.objects.all().values('subject')
+  return render(request, 'subjects.html', { 'subjects': subjects })
+
+def note_index(request, subject):
+  notes = Note.objects.filter(subject=subject)
   return render(request, 'note/index.html', { 'notes': notes })
 
 def note_detail(request, note_id):
