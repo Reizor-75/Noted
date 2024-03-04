@@ -19,14 +19,14 @@ def note_subjects(request):
 @login_required
 def note_index(request, subject):
   notes = Note.objects.filter(user=request.user, subject=subject)
-  return render(request, 'note/index.html', { 
+  return render(request, 'notes/index.html', { 
     'subject':subject,
     'notes': notes })
 
 @login_required
 def note_detail(request, subject, note_id):
   note = Note.objects.get(id=note_id)
-  return render(request, 'note/detail.html', { 'note': note })
+  return render(request, 'notes/detail.html', { 'note': note })
 
 class NoteCreate(LoginRequiredMixin, CreateView):
   model = Note
