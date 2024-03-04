@@ -9,7 +9,7 @@
   Inspired by the Cornell Notes System, Noted is a place for you to track your notes in an organized manner as you continue your path through education.
   Sign up or Login to have access to your Notes today.
   <div>    
-    <a href="/">Sign in</a>
+    <a href="{% url 'signup' %}">Sign in</a>
   </div>
 </p>
 {% if not user.is_authenticated %}
