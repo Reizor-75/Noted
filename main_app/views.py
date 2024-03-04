@@ -18,7 +18,7 @@ def note_subjects(request):
 
 @login_required
 def note_index(request, subject):
-  notes = Note.objects.filter(user=request.user, subject=subject)
+  notes = Note.objects.filter(user=request.user, subject=subject).order_by('-date')
   return render(request, 'notes/index.html', { 
     'subject':subject,
     'notes': notes })

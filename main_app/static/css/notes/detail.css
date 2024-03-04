@@ -62,7 +62,8 @@ div.edit-delete > a{
   justify-content: space-between;
   font-size: var(--font-l);
   font-weight: 600;
-  padding: 0 4px;
+  padding: 4px;
+  margin-bottom: 8px;
 }
 
 .user-buttons > a{  

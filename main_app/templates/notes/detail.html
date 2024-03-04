@@ -44,7 +44,7 @@
 </section>
 <section class="user-buttons">
   <a href="{% url 'note-index' note.subject %}"> {{note.subject}} notes</a>
-  <a href="{% url 'note-index' note.subject %}"> Next ➡️</a>
+  {% comment %} <a href="{% url 'note-detail' %}"> Next ➡️</a> {% endcomment %}
   </section>
 
 {% endblock %}
