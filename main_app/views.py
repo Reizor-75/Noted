@@ -4,26 +4,31 @@ from django.views.generic.edit import CreateView, UpdateView, DeleteView
 from django.contrib.auth.views import LoginView
 from django.contrib.auth import login
 from django.contrib.auth.forms import UserCreationForm
+from django.contrib.auth.decorators import login_required
+from django.contrib.auth.mixins import LoginRequiredMixin
 
 # Create your views here.
 class Home(LoginView):
   template_name = 'home.html'
 
+@login_required
 def note_subjects(request):
   subjects = Note.objects.filter(user=request.user).values('subject')
   return render(request, 'subjects.html', { 'subjects': subjects })
 
+@login_required
 def note_index(request, subject):
   notes = Note.objects.filter(user=request.user, subject=subject)
   return render(request, 'note/index.html', { 
     'subject':subject,
     'notes': notes })
 
+@login_required
 def note_detail(request, subject, note_id):
   note = Note.objects.get(id=note_id)
   return render(request, 'note/detail.html', { 'note': note })
 
-class NoteCreate(CreateView):
+class NoteCreate(LoginRequiredMixin, CreateView):
   model = Note
   fields = ['subject','title', 'date','key', 'content', 'summary']   
   def form_valid(self, form):
@@ -31,11 +36,11 @@ class NoteCreate(CreateView):
     return super().form_valid(form)
   success_url = '/subjects/'
 
-class NoteUpdate(UpdateView):
+class NoteUpdate(LoginRequiredMixin, UpdateView):
   model = Note
   fields = ['subject','title', 'date','key', 'content', 'summary']  
 
-class NoteDelete(DeleteView):
+class NoteDelete(LoginRequiredMixin, DeleteView):
   model = Note
   success_url = '/notes/'
 
