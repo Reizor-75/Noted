@@ -10,11 +10,11 @@ class Home(LoginView):
   template_name = 'home.html'
 
 def note_subjects(request):
-  subjects = Note.objects.all().values('subject')
+  subjects = Note.objects.filter(user=request.user).values('subject')
   return render(request, 'subjects.html', { 'subjects': subjects })
 
 def note_index(request, subject):
-  notes = Note.objects.filter(subject=subject)
+  notes = Note.objects.filter(user=request.user, subject=subject)
   return render(request, 'note/index.html', { 
     'subject':subject,
     'notes': notes })
