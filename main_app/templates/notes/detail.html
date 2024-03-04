@@ -29,7 +29,13 @@
     <div class="note-body">
       <div class="key-body">
         <h2 class="key-title">Key: </h2>
-        <div class="note-text">{{note.key}}</div>
+        <div class="note-text">
+          <ul>
+            {% for keyword in note.format_key %}
+              <li class="key">{{ keyword }}</li>
+            {% endfor %}
+          </ul>
+        </div>
       </div>
       <div class="content-body">
         <h2 class="content-title">Content:</h2>

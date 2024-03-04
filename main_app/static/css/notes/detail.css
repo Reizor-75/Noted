@@ -24,7 +24,7 @@ div.edit-delete > a{
   font-size: var(--font-reg);
   font-weight: 600;
   color: var(--link-hover-color);
-  background-color: var(--nav-bg);
+  background-color: var(--main);
   margin: 0px 1px;
   padding: 4px;
   border-radius: 8px;
@@ -53,8 +53,14 @@ div.edit-delete > a{
   border-right: solid 2px red ;
 }
 
+li.key{
+  background-color: var(--hightlight);
+  padding: 2px;
+  margin: 4px 0;
+}
+
 .note-text{
-  font-size: var(--font-reg);
+  font-size: var(--font-reg);  
 }
 
 .user-buttons{
@@ -69,7 +75,7 @@ div.edit-delete > a{
 .user-buttons > a{  
   font-weight: 600;
   color: var(--text-color);
-  background-color: var(--nav-bg);
+  background-color: var(--main);
   padding: 4px 8px;
   border-radius: 8px;
 }

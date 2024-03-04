@@ -24,7 +24,8 @@ body {
   align-items: center;
   font-family: "Short Stack";
   min-height: 100vh;
-  --nav-bg: rgba(104, 197, 248, .9);
+  --main: rgba(104, 197, 248, .9);
+  --hightlight: rgba(104, 197, 248, .5);
   --text-color: rgb(17, 20, 17);
   --link-hover-color: rgb(16, 56, 158);
   --button-bg: rgb(245, 245, 245);
@@ -43,7 +44,7 @@ body {
 
 header {
   width: 100%;
-  background: var(--nav-bg);
+  background: var(--main);
   display: flex;
   justify-content: space-between;
 }
@@ -82,10 +83,16 @@ nav a {
   border-radius: 4px;
 }
 
+nav a:visited {
+  color: var(--text-color);
+  font-weight: 600;
+}
+
 nav a:hover {
-  color: var(--nav-bg);
+  color: var(--main);
   background-color: var(--link-hover-color);
 }
+
 
 nav ul {
   display: flex;
@@ -154,9 +161,6 @@ a{
   margin-left:15px;
 }
 
-.page-header img:first-of-type {
-  margin-left: 20px;
-}
 
 .page-content {
   font-size: var(--font-reg);
@@ -190,7 +194,7 @@ a{
 
   @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
     header {
-      background: var(--nav-bg);
+      background: var(--main);
       -webkit-backdrop-filter: blur(3px);
       backdrop-filter: blur(3px);
     }

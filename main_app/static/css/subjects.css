@@ -11,7 +11,7 @@
 }
 
 .card{
-  color: var(--nav-bg);
+  color: var(--main);
   background-color: var(--link-hover-color);
   margin: 16px 0;
   padding: 8px;
@@ -21,7 +21,7 @@
 }
 
 .card:hover{   
-  background-color: var(--nav-bg);
+  background-color: var(--main);
   a{    
     color: var(--link-hover-color);   
   }
@@ -34,5 +34,5 @@
 }
 
 a {
-  color: var(--nav-bg);
+  color: var(--main);
 }

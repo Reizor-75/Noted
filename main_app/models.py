@@ -21,3 +21,6 @@ class Note(models.Model):
       'note_id': self.id,
       'subject': self.subject
       })
+
+  def format_key(self):
+    return self.key.split(", ")
