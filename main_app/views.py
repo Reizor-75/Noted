@@ -28,3 +28,7 @@ class NoteCreate(CreateView):
 class NoteUpdate(UpdateView):
   model = Note
   fields = ['subject','title', 'date','key', 'content', 'summary', ]  
+
+class NoteDelete(DeleteView):
+  model = Note
+  success_url = '/notes/'
