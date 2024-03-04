@@ -23,12 +23,15 @@ def note_detail(request, subject, note_id):
 
 class NoteCreate(CreateView):
   model = Note
-  fields = ['subject','title', 'date','key', 'content', 'summary', "user"]  
+  fields = ['subject','title', 'date','key', 'content', 'summary']   
+  def form_valid(self, form):
+    form.instance.user = self.request.user
+    return super().form_valid(form)
   success_url = '/subjects/'
 
 class NoteUpdate(UpdateView):
   model = Note
-  fields = ['subject','title', 'date','key', 'content', 'summary', ]  
+  fields = ['subject','title', 'date','key', 'content', 'summary']  
 
 class NoteDelete(DeleteView):
   model = Note
