@@ -1,18 +1,24 @@
 {% extends 'base.html' %}
 {% load static%}
+
+{% block head %}
 <link rel="stylesheet" type="text/css" href="{% static 'css/home.css' %}">
+{% endblock %}
 
 {% block content %}
 
-<h1>Welcome to Noted</h1>
-<p class="page-content">
-  Inspired by the Cornell Notes System, Noted is a place for you to track your notes in an organized manner as you continue your path through education.
-  Sign up or Login to have access to your Notes today.
+<section class="about-container">
+  <div class="page-header">
+    <h1>Welcome to Noted</h1>
+  </div>
+  <p class="page-content">
+    Inspired by the Cornell Notes System, Noted is a place for you to track your notes in an organized manner as you continue your path through education.
+    Sign up or Login to have access to your Notes today.
+  </p>
+</section>
 
-</p>
 {% if not user.is_authenticated %}
   <section>
-    <a href="{% url 'signup' %}">Sign up</a>
     <form action="{% url 'home' %}" method="post" class="login">
       <h1>Login</h1>
       {% csrf_token %}

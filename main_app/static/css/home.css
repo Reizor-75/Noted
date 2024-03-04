@@ -1,5 +1,46 @@
 main{
   display: flex;
   justify-content: center;
-  width:80vh;
+  align-items: center;
+  flex-wrap: wrap;  
+}
+
+main > section {
+  width: 100%;
+  padding: 10px 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+
+.login {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.login h1 {
+  font-size: clamp(3.2rem, 3vw, 4.8rem);
+  margin: 10px 0;
+}
+
+.login > p {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.login label {
+  font-size: var(--font-reg);
+  margin-right: 4px;
+  margin-bottom: 6px;
+}
+
+.login input {
+  font-size: var(--font-l);
+  padding: 2px 4px;
+  width: 75%
 }

@@ -1,12 +1,8 @@
 {% extends "base.html" %}
 {% load static %}
 
-{% block head%}
-<link 
-  rel="stylesheet"
-  type="text/css"
-  href=""
-/>
+{% block head %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/subjects.css' %}">
 {% endblock %}
 
 {% block content %}
@@ -20,14 +16,13 @@
     {% for subject in subjects %}
       <div class="card">
         <a href="{% url 'note-index' subject.subject %}">
-          <div class="card-content">
-            <h2 class="card-subject">
-              {{ subject.subject }}
-              <div class="edit-delete">
-                <a href="">✏️</a>
-                <a href="">🗑️</a>
-              </div>
-            </h2>
+          <h2 class="card-subject">
+            {{ subject.subject }}
+            {% comment %} <div class="edit-delete">
+              <a href="">✏️</a>
+              <a href="">🗑️</a>
+            </div> {% endcomment %}
+          </h2>
         </a>
       </div>
     {% endfor %}

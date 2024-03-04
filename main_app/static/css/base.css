@@ -45,7 +45,9 @@ body {
 
 header {
   width: 100%;
-  background: var(--nav-bg-ff); /* rgba(104, 197, 248, .9) */
+  background: var(--nav-bg-ff);
+  display: flex;
+  justify-content: space-between;
 }
 
 nav {
@@ -59,7 +61,6 @@ ul {
 }
 
 main {
-  width: 100%;
   padding: 0 10px;  
   display: flex;
   flex-direction: column;
@@ -111,7 +112,7 @@ nav ul {
   padding: 8px 16px;
   border-radius: 6px;
   border-width: 2px;
-  border-style: solid;
+  border-style: none;
   text-decoration: none;
   background-color: var(--button-bg);
   font-weight: 600;
@@ -145,7 +146,7 @@ nav ul {
 }
 
 .page-header h1 {
-  font-size: var(--font-xxl);
+  font-size: var(--font-xl);
   margin: 0;
 }
 
@@ -162,18 +163,10 @@ nav ul {
   font-size: var(--font-reg);
 }
 
-@media only screen and (min-width: 768px) {
-  header {
-    position: sticky;
-    display: flex;
-    flex-direction: row;
-    top: 0;
-    align-items: center;
-  }
+@media only screen and (max-width: 768px) {
 
   main {
-    max-width: 1300px;
-    min-height: calc(100vh - 53px);
+    width: 100vw;
   }
 
   nav,
@@ -182,27 +175,9 @@ nav ul {
     padding: 0 15px;
   }
 
-  /* visual fix to help align logo */
-  .header-logo-container {
-    padding-top: 3px;
-  }
-
-  nav {
-    margin-left: auto;
-    display: flex;
-    justify-content: center;
-  }
-
-  nav ul {
-    flex-wrap: nowrap;
-  }
-
-  .header-logo-container {
-    width: 213px;
-  }
-
   .page-header h1 {
-    font-size: var(--font-xtreme);
+    font-size: var(--font-xxl);
+    text-align: center;
   }
   
   .page-header img {
