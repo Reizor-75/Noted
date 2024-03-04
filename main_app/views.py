@@ -1,10 +1,11 @@
 from django.shortcuts import render
 from .models import Note
 from django.views.generic.edit import CreateView, UpdateView, DeleteView
+from django.contrib.auth.views import LoginView
 
 # Create your views here.
-def home(request):
-  return render(request, 'home.html')
+class Home(LoginView):
+  template_name = 'home.html'
 
 def note_subjects(request):
   subjects = Note.objects.all().values('subject')

@@ -21,10 +21,12 @@
     <div class="header-logo-container">
     </div>
     <nav>
+      {% if  user.is_authenticated %}
       <ul>
         <li><a href="{% url 'subjects' %}" >My Subjects</a></li>
-        <li><a href="" >Log out</a></li>
+        <li><a href="{% url 'logout' %}" >Log out</a></li>
       </ul>
+      {% endif %}
     </nav>
   </header>
   <main>
