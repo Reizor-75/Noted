@@ -1,0 +1,74 @@
+.note-container{
+  border: solid 2px black;
+  border-bottom: none;
+  margin: 8px 0;
+}
+
+.note-container > *{
+  padding: 8px;
+}
+
+div > *{
+  margin: 0;
+}
+
+.page-header{
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  border-bottom: solid 2px black;
+}
+
+div.edit-delete > a{
+  text-align: center;
+  font-size: var(--font-reg);
+  font-weight: 600;
+  color: var(--link-hover-color);
+  background-color: var(--nav-bg);
+  margin: 0px 1px;
+  padding: 4px;
+  border-radius: 8px;
+}
+
+.note-details{
+  padding: 0;
+}
+
+.note-details > *{  
+  padding: 4px;
+  border-bottom: solid 2px black;
+}
+
+.note-body{
+  padding: 0;
+  display: flex;
+  min-height: 50vh;
+}
+
+.note-body > *{  
+  padding: 8px;
+}
+
+.key-body{
+  border-right: solid 2px red ;
+}
+
+.note-text{
+  font-size: var(--font-reg);
+}
+
+.user-buttons{
+  display: flex;
+  justify-content: space-between;
+  font-size: var(--font-l);
+  font-weight: 600;
+  padding: 0 4px;
+}
+
+.user-buttons > a{  
+  font-weight: 600;
+  color: var(--text-color);
+  background-color: var(--nav-bg);
+  padding: 4px 8px;
+  border-radius: 8px;
+}
