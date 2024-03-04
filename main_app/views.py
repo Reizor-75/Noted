@@ -24,3 +24,7 @@ class NoteCreate(CreateView):
   model = Note
   fields = ['subject','title', 'date','key', 'content', 'summary', "user"]  
   success_url = '/subjects/'
+
+class NoteUpdate(UpdateView):
+  model = Note
+  fields = ['subject','title', 'date','key', 'content', 'summary', ]  

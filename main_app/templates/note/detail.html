@@ -42,8 +42,8 @@
     <div class="user-buttons">
       <div class="edit-delete">
         <h4>
-          <a href="">✏️</a>
-          <a href="">🗑️</a>
+          <a href="{% url 'note-update' note.id %}">✏️</a>
+          <a href="{% url 'note-delete' note.id %}">🗑️</a>
         </h4>
       </div>
       <div class="next-note">
