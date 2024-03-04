@@ -16,7 +16,7 @@
 </section>
 
 <section class="card-container">
-  {% if subects%}
+  {% if subjects %}
     {% for subject in subjects %}
       <div class="card">
         <a href="{% url 'note-index' subject.subject %}">

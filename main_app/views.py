@@ -13,7 +13,7 @@ class Home(LoginView):
 
 @login_required
 def note_subjects(request):
-  subjects = Note.objects.filter(user=request.user).values('subject')
+  subjects = Note.objects.filter(user=request.user).values('subject').distinct()
   return render(request, 'subjects.html', { 'subjects': subjects })
 
 @login_required
