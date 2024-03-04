@@ -26,7 +26,11 @@ def note_index(request, subject):
 @login_required
 def note_detail(request, subject, note_id):
   note = Note.objects.get(id=note_id)
-  return render(request, 'notes/detail.html', { 'note': note })
+  next_note = Note.objects.filter(user=request.user, subject=subject, date__lt=note.date).order_by('-date').first()
+  return render(request, 'notes/detail.html', { 
+    'note': note,
+    'next' : next_note
+  })
 
 class NoteCreate(LoginRequiredMixin, CreateView):
   model = Note

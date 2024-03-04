@@ -23,7 +23,7 @@ div.edit-delete > a{
   text-align: center;
   font-size: var(--font-reg);
   font-weight: 600;
-  color: var(--link-hover-color);
+  color: var(--button-hover-color);
   background-color: var(--main);
   margin: 0px 1px;
   padding: 4px;

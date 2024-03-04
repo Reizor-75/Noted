@@ -50,7 +50,11 @@
 </section>
 <section class="user-buttons">
   <a href="{% url 'note-index' note.subject %}"> {{note.subject}} notes</a>
-  {% comment %} <a href="{% url 'note-detail' %}"> Next ➡️</a> {% endcomment %}
+  {% if next%}
+    <a href="{% url 'note-detail' note.subject next.id %}"> {{ next.title }} ➡️</a>
+  {% else %}
+    <div>No More Notes</div>
+  {% endif%}
   </section>
 
 {% endblock %}

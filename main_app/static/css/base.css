@@ -27,7 +27,7 @@ body {
   --main: rgba(104, 197, 248, .9);
   --hightlight: rgba(104, 197, 248, .5);
   --text-color: rgb(17, 20, 17);
-  --link-hover-color: rgb(16, 56, 158);
+  --button-hover-color: rgb(16, 56, 158);
   --button-bg: rgb(245, 245, 245);
   --button-bg-hover: rgb(226, 226, 226);
   --submit: rgb(26, 128, 0);
@@ -90,9 +90,8 @@ nav a:visited {
 
 nav a:hover {
   color: var(--main);
-  background-color: var(--link-hover-color);
+  background-color: var(--button-hover-color);
 }
-
 
 nav ul {
   display: flex;
@@ -123,6 +122,7 @@ nav ul {
   font-family: inherit;
   margin-left: 10px;
   color: white;
+  box-shadow: var(--card-box-shadow);
 }
 
 .btn:hover {
