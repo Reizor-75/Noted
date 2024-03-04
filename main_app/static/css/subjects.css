@@ -4,33 +4,26 @@
   flex-wrap: wrap;
 }
 
-.page-header > a{
-  font-size: var(--font-l);
-  font-weight: 600;
-  color: var(--link-hover-color);
-  background-color: var(--nav-bg);
-  margin: 8px 16px;
-  padding: 8px;
-  border-radius: 8px;
-}
-
 .card{
   color: var(--nav-bg);
   background-color: var(--link-hover-color);
   margin: 8px 0;
   padding: 8px;
   border-radius: 16px;
+  box-shadow: var(--card-box-shadow);
 }
 
-.card:hover, .card > a:hover{  
-  color: var(--link-hover-color);
+.card:hover{   
   background-color: var(--nav-bg);
+  a{    
+    color: var(--link-hover-color);   
+  }
 }
 
 .card-subject{
   display: flex;
   justify-content: center;
-  margin: 8px;
+  margin: 0px;
 }
 
 a {

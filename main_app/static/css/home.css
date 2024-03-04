@@ -14,7 +14,6 @@ main > section {
   flex-direction: column;
 }
 
-
 .login {
   display: flex;
   flex-direction: column;
@@ -23,7 +22,7 @@ main > section {
   width: 100%;
 }
 .login h1 {
-  font-size: clamp(3.2rem, 3vw, 4.8rem);
+  font-size: var(--font-xl);
   margin: 10px 0;
 }
 

@@ -24,14 +24,13 @@ body {
   align-items: center;
   font-family: "Short Stack";
   min-height: 100vh;
-  --nav-bg: rgba(104, 197, 248, .7);
-  --nav-bg-ff: rgba(104, 197, 248, .9);
+  --nav-bg: rgba(104, 197, 248, .9);
   --text-color: rgb(17, 20, 17);
   --link-hover-color: rgb(16, 56, 158);
   --button-bg: rgb(245, 245, 245);
   --button-bg-hover: rgb(226, 226, 226);
   --submit: rgb(26, 128, 0);
-  --warn: rgb(255, 102, 0);
+  --new: rgb(255, 220, 0);
   --danger: rgb(220, 20, 30);
   --secondary: rgb(57, 57, 57);
   --card-box-shadow: 5px 5px 6px -1px #AAA;
@@ -44,7 +43,7 @@ body {
 
 header {
   width: 100%;
-  background: var(--nav-bg-ff);
+  background: var(--nav-bg);
   display: flex;
   justify-content: space-between;
 }
@@ -64,7 +63,7 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width:80vh;
+  width: 80vh;
 }
 
 h2 {
@@ -81,9 +80,8 @@ nav a {
 }
 
 nav a:hover {
-  color: var(--nav-bg-ff);
+  color: var(--nav-bg);
   background-color: var(--link-hover-color);
-  font-weight: 900;
 }
 
 nav ul {
@@ -95,9 +93,7 @@ nav ul {
 }
 
 .header-logo-container {
-  margin: auto;
   padding: 10px 20px 0;
-  max-width: 500px;
 }
 
 .page-header {
@@ -109,39 +105,36 @@ nav ul {
 .btn {
   font-size: var(--font-l);
   padding: 8px 16px;
-  border-radius: 6px;
-  border-width: 2px;
+  border-radius: 8px;
   border-style: none;
   text-decoration: none;
-  background-color: var(--button-bg);
   font-weight: 600;
   cursor: pointer;
   font-family: inherit;
-  margin-right: 10px;
+  margin-left: 10px;
+  color: white;
 }
 
 .btn:hover {
   background-color: var(--button-bg-hover);
+  color: var(--secondary)
 }
 
 .submit {
-  color: var(--submit);
-  border-color: var(--submit);
+  background-color: var(--submit);
+}
+
+.new{
+  color: chocolate;
+  background-color: var(--new);
 }
 
 .secondary {
-  color: var(--secondary);
-  border-color: var(--secondary);
-}
-
-.warn {
-  color: var(--warn);
-  border-color: var(--warn);
+  background-color: var(--secondary);
 }
 
 .danger {
-  color: var(--danger);
-  border-color: var(--danger);
+  background-color: var(--danger);
 }
 
 a{
