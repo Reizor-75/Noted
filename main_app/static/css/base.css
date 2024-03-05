@@ -41,7 +41,8 @@ body {
   --font-reg: 1.6rem;
   --card-border-radius: 6px;
 }
-
+/* 
+future feature
 .pink{
   --main: rgba(255, 175, 223, 0.9);
   --hightlight: rgba(255, 175, 223, .5);
@@ -76,7 +77,7 @@ body {
   --main: rgba(187, 187, 187, 0.9);
   --hightlight: rgba(187, 187, 187 .5);
   --button-hover-color: rgb(78, 78, 78);
-}
+} */
 
 header {
   width: 100%;
@@ -88,6 +89,7 @@ header {
 i{  
   color: var(--button-hover-color);
 }
+
 nav {
   margin: 10px;
 }
