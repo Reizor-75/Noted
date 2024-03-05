@@ -63,4 +63,4 @@ def signup(request):
   return render(request, 'signup.html', context)
 
 def set_color(request):
-  pass
+  return render(request, 'changeStyle.html')

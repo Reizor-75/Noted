@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+{% load static%}
+
+{% block head %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/home.css' %}">
+<script defer src="{% static 'js/change-style.js' %}"></script>
+{% endblock %}
+
+{% block content %}
+
+<section class="color-container">
+  <div class="page-header">
+    <h1>Select Your Color Scheme </h1>
+  </div>
+  <div class="page-content">
+    <div class="pink">
+      <i class="fa-solid fa-brush pink"></i>
+      Pink
+    </div>
+    <div class="yellow">
+      <i class="fa-solid fa-brush yellow"></i>
+      Yellow
+    </div>
+    <div class="mint">
+      <i class="fa-solid fa-brush mint"></i>
+      Mint
+    </div>
+    <div class="sky">
+      <i class="fa-solid fa-brush sky"></i>
+      Sky
+    </div>
+    <div class="lavendar">
+      <i class="fa-solid fa-brush lavendar"></i>
+      Lavendar
+    </div>
+    <div class="grey">
+      <i class="fa-solid fa-brush grey"></i>
+      Grey
+    </div>
+  </div>
+</section>
+
+{% endblock %}

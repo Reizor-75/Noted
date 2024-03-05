@@ -1,5 +1,5 @@
 html {
-  box-sizing: border-box
+  box-sizing: border-box;  
 }
 
 /* The Universal Selector */
@@ -14,7 +14,7 @@ html {
 /* resets font size to be 62.5% of the user preference - 
      in most browser configurations this will be 10px */
 :root {
-  font-size: 62.5%
+  font-size: 62.5%;
 }
 
 body {
@@ -24,10 +24,7 @@ body {
   align-items: center;
   font-family: "Short Stack";
   min-height: 100vh;
-  --main: rgba(104, 197, 248, .9);
-  --hightlight: rgba(104, 197, 248, .5);
   --text-color: rgb(17, 20, 17);
-  --button-hover-color: rgb(16, 56, 158);
   --button-bg: rgb(245, 245, 245);
   --button-bg-hover: rgb(226, 226, 226);
   --submit: rgb(26, 128, 0);
@@ -42,8 +39,40 @@ body {
   --card-border-radius: 6px;
 }
 
-i{
-  color: var(--button-hover-color);
+.pink{
+  --main: rgba(255, 175, 223, 0.9);
+  --hightlight: rgba(255, 175, 223, .5);
+  --button-hover-color: rgb(158, 16, 87);
+}
+
+.yellow{
+  --main: rgba(250, 242, 201, 0.9);
+  --hightlight: rgba(250, 242, 201, .5);
+  --button-hover-color: rgb(162, 114, 0);
+}
+
+.mint{
+  --main: rgba(191, 248, 183, 0.9);
+  --hightlight: rgba(250, 242, 201, .5);
+  --button-hover-color: rgb(89, 151, 42);
+}
+
+.sky{  
+  --main: rgba(104, 197, 248, .9);
+  --hightlight: rgba(104, 197, 248, .5);
+  --button-hover-color: rgb(16, 56, 158);
+}
+
+.lavendar{  
+  --main: rgba(198, 183, 248, 0.9);
+  --hightlight: rgba(2198, 183, 248, .5);
+  --button-hover-color: rgb(124, 42, 151);
+}
+
+.grey{  
+  --main: rgba(187, 187, 187, 0.9);
+  --hightlight: rgba(187, 187, 187 .5);
+  --button-hover-color: rgb(78, 78, 78);
 }
 
 header {
@@ -53,6 +82,9 @@ header {
   justify-content: space-between;
 }
 
+i{  
+  color: var(--button-hover-color);
+}
 nav {
   margin: 10px;
 }
@@ -106,8 +138,17 @@ nav ul {
 }
 
 .header-logo-container {
-  padding: 10px 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+  padding: 4px 0px;
+  i{
+    margin-left: 10px;
+    font-size: 2em;
+  }
 }
+
 
 .page-header {
   display: flex;
