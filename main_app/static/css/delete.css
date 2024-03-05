@@ -1,0 +1,23 @@
+.page-header{
+  padding: 4px;
+  background-color: var(--main);
+}
+
+.page-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  border: var(--card-border);
+  padding:8px;
+  margin: 20px 0;  
+  width: 90%;
+  max-width: 550px;
+  height: 40vh;
+  max-height: 300px;  
+}
+
+h2{
+  border-bottom: solid 2px red;
+}

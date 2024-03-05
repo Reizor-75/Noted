@@ -1,22 +1,29 @@
 {% extends 'base.html' %}
 {% load static %}
 
+{% block head%}
+<link rel="stylesheet" type="text/css" href="{% static 'css/delete.css' %}"/>
+{% endblock %}
+
 {% block content %}
 
 <div class="page-header">
   <h1>Delete Note?</h1>
 </div>
-<h2>Are you sure you want to delete {{note.title}}?</h2>
 
-<form action="" method="post" class="form">
-  {% csrf_token %}
-  <a 
-    href="{% url 'note-detail' note.subject note.id %}" 
-    class="btn secondary"
-  >
-    Cancel
-  </a>
-  <button type="submit" class="btn danger">Delete {{note.title}}!</button>
-</form>
+<div class="page-content">
+  <h2>Are you sure you want to delete {{note.title}}?</h2>
+  
+  <form action="" method="post" class="form">
+    {% csrf_token %}
+    <a 
+      href="{% url 'note-detail' note.subject note.id %}" 
+      class="btn secondary"
+    >
+      Cancel
+    </a>
+    <button type="submit" class="btn danger">Delete {{note.title}}!</button>
+  </form>
+</div>
 
 {% endblock %}

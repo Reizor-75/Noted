@@ -2,6 +2,7 @@
   border: var(--card-border);
   border-bottom: none;
   margin: 8px 0;
+  width: 90%
 }
 .note-container > *{
   padding: 8px;
