@@ -225,7 +225,7 @@ a{
   }
 
   .page-header h1 {
-    /* font-size: var(--font-xl); */
+    font-size: var(--font-xl);
     text-align: center;
   }
   
