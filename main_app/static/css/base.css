@@ -34,6 +34,7 @@ body {
   --new: rgb(255, 220, 0);
   --danger: rgb(220, 20, 30);
   --secondary: rgb(57, 57, 57);
+  --card-border: solid 2px black;
   --card-box-shadow: 5px 5px 6px -1px #AAA;
   --font-xxl: 3.6rem;
   --font-xl: 2.4rem;
@@ -41,6 +42,7 @@ body {
   --font-reg: 1.6rem;
   --card-border-radius: 6px;
 }
+
 /* 
 future feature
 .pink{
@@ -84,6 +86,14 @@ header {
   background: var(--main);
   display: flex;
   justify-content: space-between;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: var(--font-l);  
+}
+
+a{
+  text-decoration: none;
+  color: var(--text-color);
 }
 
 i{  
@@ -107,6 +117,7 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   width: 100vh;
   min-height: 85vh;
 }
@@ -116,10 +127,6 @@ h2 {
 }
 
 nav a {
-  text-decoration: none;
-  color: var(--text-color);
-  font-weight: 600;
-  font-size: 16px;  
   padding: 4px 8px;
   border-radius: 4px;
 }
@@ -144,16 +151,18 @@ nav ul {
 
 .header-logo-container {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 10px;
-  padding: 4px 0px;
-  i{
-    margin-left: 10px;
-    font-size: 2em;
+  margin: 0 10px ; 
+  a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
   }
 }
 
+img{
+  height: 48px;
+}
 
 .page-header {
   display: flex;
@@ -197,10 +206,6 @@ nav ul {
   background-color: var(--danger);
 }
 
-a{
-  text-decoration: none;
-}
-
 .page-header h1 {
   font-size: var(--font-xxl);
   margin: 0;
@@ -220,10 +225,8 @@ a{
     width: 80vw;
   }
 
-  nav,
-  .header-logo-container {
+  nav{
     margin: 10px 0;
-    padding: 0 15px;
   }
 
   .page-header h1 {

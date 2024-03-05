@@ -1,9 +1,8 @@
 .note-container{
-  border: solid 2px black;
+  border: var(--card-border);
   border-bottom: none;
   margin: 8px 0;
 }
-
 .note-container > *{
   padding: 8px;
 }
@@ -86,6 +85,7 @@ li.key{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
   font-size: var(--font-l);
   font-weight: 600;
   padding: 4px;

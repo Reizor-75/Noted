@@ -20,8 +20,27 @@ h2{
   }
 }
 
-
 textarea{ 
   width: 100%;
   height: 100%;
+}
+
+.signup{
+  background-color: white;
+  box-shadow: var(--card-box-shadow);
+  border: var(--card-border);
+  font-size: var(--font-reg);
+  padding: 8px;   
+}
+
+tr {
+  padding: 4px;
+  input{
+    width: 100%;
+  }
+}
+
+th{
+  display: flex;
+  justify-content: center;
 }

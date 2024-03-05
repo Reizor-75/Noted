@@ -4,15 +4,17 @@ main{
   align-items: center;
 }
 
-main > section {
+main > section {  
   width: 90%;
+  max-width: 550px;
   height: 40vh;
+  max-height: 350px;
   padding: 10px 8px;
   margin: 8px 0;
   display: flex;
   flex-direction: column;
   background-color: white;
-  border: solid 2px black;
+  border: var(--card-border);
   box-shadow: var(--card-box-shadow);
 }
 

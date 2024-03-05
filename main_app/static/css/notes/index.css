@@ -1,8 +1,13 @@
 main{
   height: 90vh;  
-  .card-container{  
-    overflow-y: auto;
-  }
+}
+
+.card-container{  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  overflow-y: auto;
 }
 
 h1{
@@ -16,9 +21,11 @@ h1{
   flex-direction: column;
   align-items: center;
   margin: 20px 0;  
+  width: 90%;
+  max-width: 550px;
   height: 40vh;
+  max-height: 350px;
 }
-
 
 .card{
   display: flex;

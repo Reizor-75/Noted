@@ -4,13 +4,16 @@
   flex-wrap: wrap;
 }
 
-.card-container{
+.card-container{  
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: white;
-  border: solid 2px black;
+  border: var(--card-border);
   box-shadow: var(--card-box-shadow);
+  width: 90%;
+  max-width: 550px;
+
 }
 
 .card{
