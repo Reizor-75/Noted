@@ -7,10 +7,14 @@ main{
 main > section {
   width: 100%;
   padding: 10px 8px;
+  margin: 8px 0;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  background-color: white;
+  border: solid 2px black;
+  box-shadow: var(--card-box-shadow);
 }
 
 .login {
@@ -20,6 +24,7 @@ main > section {
   align-items: center;
   width: 100%;
 }
+
 .login h1 {
   font-size: var(--font-xl);
   margin: 10px 0;

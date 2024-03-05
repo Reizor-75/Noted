@@ -28,3 +28,7 @@
 a{ 
   color: var(--text-color);
 }
+
+.note-title{  
+  border-bottom: solid 2px red;
+}

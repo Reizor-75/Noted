@@ -66,6 +66,7 @@ li.key{
 .user-buttons{
   display: flex;
   justify-content: space-between;
+  align-items: center;
   font-size: var(--font-l);
   font-weight: 600;
   padding: 4px;

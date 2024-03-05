@@ -41,7 +41,9 @@ body {
   --font-reg: 1.6rem;
   --card-border-radius: 6px;
 }
-
+i{
+  color: var(--button-hover-color);
+}
 header {
   width: 100%;
   background: var(--main);
