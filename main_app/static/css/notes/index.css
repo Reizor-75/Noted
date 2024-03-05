@@ -1,4 +1,5 @@
 a{
+  color: var(--text-color);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -8,7 +9,7 @@ a{
   display: flex;
   flex-direction: column;
   width: 90%;
-  height: 40vh;
+  max-height: 40vh;
   background-color: white;
   border: solid 2px var(--text-color);
   padding: 8px;
@@ -24,10 +25,6 @@ a{
   font-size: var(--font-l);
   font-weight: 500;
   overflow-y: auto;
-}
-
-a{ 
-  color: var(--text-color);
 }
 
 .note-title{  
