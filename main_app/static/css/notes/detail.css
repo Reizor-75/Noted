@@ -44,16 +44,28 @@ div.edit-delete > a{
 .note-body{
   padding: 0;
   display: flex;
-  min-height: 50vh;
+  height: 50vh;
 }
 
 .note-body > *{  
   padding: 8px;
 }
 
+.content-body, .note-bottom, .key-body{
+  display: flex;
+  flex-direction: column;
+  div{    
+    overflow-y: auto;
+  }
+}
+
 .key-body{
-  width: 35%;
+  width: 30%;
   border-right: solid 2px red ;
+}
+
+.content-body{  
+  width: 70%;
 }
 
 li.key{

@@ -20,10 +20,6 @@ h2{
   }
 }
 
-.content-body, .note-bottom, .key-body{
-  display: flex;
-  flex-direction: column;
-}
 
 textarea{ 
   width: 100%;
