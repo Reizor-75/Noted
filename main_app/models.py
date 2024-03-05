@@ -8,7 +8,7 @@ class Note(models.Model):
   title = models.CharField(max_length=100)
   subject = models.CharField(max_length=100)
   date = models.DateField("Class Date")
-  key = models.CharField(max_length=100)
+  key = models.TextField(max_length=1000)
   content = models.TextField(max_length=1000)
   summary = models.TextField(max_length=1000)  
   user = models.ForeignKey(User, on_delete=models.CASCADE)

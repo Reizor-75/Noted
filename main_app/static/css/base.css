@@ -24,6 +24,9 @@ body {
   align-items: center;
   font-family: "Short Stack";
   min-height: 100vh;
+  --main: rgba(104, 197, 248, .9);
+  --hightlight: rgba(104, 197, 248, .5);
+  --button-hover-color: rgb(16, 56, 158);
   --text-color: rgb(17, 20, 17);
   --button-bg: rgb(245, 245, 245);
   --button-bg-hover: rgb(226, 226, 226);
@@ -197,7 +200,7 @@ a{
 }
 
 .page-header h1 {
-  font-size: var(--font-xl);
+  font-size: var(--font-xxl);
   margin: 0;
 }
 
@@ -206,13 +209,11 @@ a{
   margin-left:15px;
 }
 
-
 .page-content {
   font-size: var(--font-reg);
 }
 
 @media only screen and (max-width: 768px) {
-
   main {
     width: 90vw;
   }
@@ -224,7 +225,7 @@ a{
   }
 
   .page-header h1 {
-    font-size: var(--font-xxl);
+    font-size: var(--font-xl);
     text-align: center;
   }
   

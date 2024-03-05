@@ -1,39 +1,31 @@
-.form-container {
+.page-header{
+  margin: 6px 0;
+  border: none;
+  h1{
+    padding: 4px;
+    background-color: var(--hightlight);
+  }
+}
+.note-container{
+  margin: 0;
+}
+
+h2{
+  display: flex;
+  width: 100%;
+
+  input{
+    flex: 1;  
+    margin: 0 4px;
+  }
+}
+
+.content-body, .note-bottom, .key-body{
   display: flex;
   flex-direction: column;
+}
+
+textarea{ 
   width: 100%;
-}
-
-table {
-  padding: 0 40px;
-  width: 100%;
-  border-spacing: 0 20px;
-}
-
-th {
-  text-align: left;
-  padding: 6px 20px 0 0;
-  font-weight: normal;
-  vertical-align: top;
-  font-size: var(--font-reg);
-}
-
-td {
-  max-width: 60%;
-}
-
-td > * {
-  width: 100%;
-  padding: 2px 4px;
-  font-size: var(--font-l);
-}
-
-td > textarea {
-  height: calc(4 * var(--font-l) + 8px);
-  font-family: inherit;
-}
-
-.btn {
-  align-self: flex-end;
-  margin-right: 40px;
+  height: 100%;
 }

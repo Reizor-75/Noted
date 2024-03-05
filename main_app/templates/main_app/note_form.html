@@ -2,24 +2,54 @@
 {% load static %}
 
 {% block head %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/notes/detail.css' %}"/>
 <link rel="stylesheet" type="text/css" href="{% static 'css/form.css' %}"/>
 {% endblock %}
 
 {% block content %}
-
-<div class="page-header">
-  {% if note %}
-    <h1>Edit Note</h1>
-  {% else %} 
-    <h1>Add New Note</h1>
-  {% endif %}
-</div>
 <form action="" method="post" class="form-container">
   {% csrf_token %}
-  <table>
+  <div class="page-header">
+    {% if note %}
+    <h1>Edit Note</h1>
+    {% else %} 
+      <h1>Add New Note</h1>
+    {% endif %}
+    
+    <button type="submit" class="btn submit">Submit!</button>
+  </div>
+
+  <section class="note-container">
+    <div class="note-details">
+      <h2 class="note-title">Subject:
+        {{form.subject}}
+      </h2>
+      <h2 class="note-title">Title: 
+        {{form.title}}
+      </h2>
+      <h2 class="note-date">Date: 
+        {{form.date}}
+      </h2>
+
+      <div class="note-body">
+        <div class="key-body">
+          <h2 class="key-title">Key: </h2>
+          {{form.key}}
+        </div>
+        <div class="content-body">
+          <h2 class="content-title">Content:</h2>
+          {{form.content}}
+        </div>
+      </div>
+      <div class="note-bottom">
+        <h2 class="summary-title">Summary:</h2>
+        {{form.summary}}
+      </div>
+    </div>  
+  </section>
+  {% comment %} <table>
     {{ form.as_table }}
-  </table>
-  <button type="submit" class="btn submit">Submit!</button>
+  </table> {% endcomment %}
 </form>
 
 {% endblock %}

@@ -52,6 +52,7 @@ div.edit-delete > a{
 }
 
 .key-body{
+  width: 35%;
   border-right: solid 2px red ;
 }
 
@@ -63,6 +64,10 @@ li.key{
 
 .note-text{
   font-size: var(--font-reg);  
+}
+
+.note-bottom{
+  height: 20vh;
 }
 
 .user-buttons{
