@@ -1,4 +1,7 @@
 .page-header{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
   margin: 6px 0;
   border: none;
   h1{
@@ -6,6 +9,14 @@
     background-color: var(--hightlight);
   }
 }
+
+form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
 .note-container{
   margin: 0;
 }
@@ -19,7 +30,6 @@ h2{
     margin: 0 4px;
   }
 }
-
 textarea{ 
   width: 100%;
   height: 100%;
@@ -38,9 +48,4 @@ tr {
   input{
     width: 100%;
   }
-}
-
-th{
-  display: flex;
-  justify-content: center;
 }

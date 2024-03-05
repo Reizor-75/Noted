@@ -4,6 +4,17 @@
 {% block head %}
 <link rel="stylesheet" type="text/css" href="{% static 'css/notes/detail.css' %}"/>
 <link rel="stylesheet" type="text/css" href="{% static 'css/form.css' %}"/>
+
+<script defer src="{% static 'js/form.js' %}"></script>
+<link 
+  href="https://cdn.jsdelivr.net/npm/mc-datepicker/dist/mc-calendar.min.css" 
+  rel="stylesheet" 
+/>
+<link rel="stylesheet" href="{% static 'css/mcdp.css' %}">
+<script 
+  src="https://cdn.jsdelivr.net/npm/mc-datepicker/dist/mc-calendar.min.js"
+>
+</script>
 {% endblock %}
 
 {% block content %}
