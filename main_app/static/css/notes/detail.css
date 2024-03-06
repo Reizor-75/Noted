@@ -2,8 +2,9 @@
   border: var(--card-border);
   border-bottom: none;
   margin: 8px 0;
-  width: 90%
+  width: 90%;
 }
+
 .note-container > *{
   padding: 8px;
 }
@@ -102,4 +103,11 @@ li.key{
   i{  
     font-size: 1em;
   }
+}
+
+@media screen and (max-height:800px){
+  .note-container{
+    height: 75vh;
+    overflow-y: auto;
+    }
 }

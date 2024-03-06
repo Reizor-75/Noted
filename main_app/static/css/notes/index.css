@@ -1,12 +1,9 @@
-main{
-  height: 90vh;  
-}
-
 .card-container{  
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
+  height: 85vh;
   overflow-y: auto;
 }
 

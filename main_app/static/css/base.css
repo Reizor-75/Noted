@@ -53,6 +53,22 @@ header {
   font-size: var(--font-l);  
 }
 
+footer {
+  position:absolute;
+  bottom: 0;;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background: var(--main);
+  color: var(--text-color);
+  font-size: var(--font-l);
+  font-weight: 600;  
+  padding: 5px 0;
+  i{
+    color: var(--text-color)
+  }
+}
+
 a{
   text-decoration: none;
   color: var(--text-color);
@@ -81,7 +97,7 @@ main {
   justify-content: center;
   align-items: center;
   width: 100vh;
-  min-height: 85vh;
+  min-height: 90vh;
 }
 
 h2 {
@@ -185,10 +201,10 @@ img{
   font-size: var(--font-reg);
 }
 
-@media only screen and (max-width: 1023px) {
+@media only screen and (max-width: 1025px) {
   main {
-    width: 100vw;
-    max-width: 1024px;
+    width: 99vw;
+    max-height: 95vh;
   }
 
   nav{
