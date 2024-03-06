@@ -6,7 +6,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="{% static 'css/base.css' %}">
+  
   <link
     id="favicon" 
     rel="icon" 
@@ -19,9 +19,17 @@
   <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Shadows+Into+Light&family=Short+Stack&display=swap" rel="stylesheet">
 
   <script src="https://kit.fontawesome.com/2188847cca.js" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" type="text/css" href="{% static 'css/base.css' %}">
+  {% if theme.color == "pink" %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/pink.css' %}">    
+  {% else %}    
+  {% endif%}
+
   <title>Noted</title>
   {% block head %}
   {% endblock %}
+  
 </head>
 <body>
   <header>
@@ -30,14 +38,11 @@
         <img class="logo" src="{% static 'images/noted-favi.png' %}" alt="Noted Logo">
         <div class="logo">Noted</div>
       </a>
-      {% comment %}  
-        future feature
-        <a href="{% url 'set-color' %}"><i class="fa-solid fa-palette"></i></a>
-      {% endcomment %}
     </div>
     <nav>
       <ul>
         {% if  user.is_authenticated %}
+          <li><a href="{% url 'view-theme' %}"><i class="fa-solid fa-palette"></i></a></li>
           <li><a href="{% url 'subjects' %}" >My Subjects</a></li>
           <li><a href="{% url 'logout' %}" >Log out</a></li>
         {% else %}

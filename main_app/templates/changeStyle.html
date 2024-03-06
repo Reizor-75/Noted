@@ -1,5 +1,3 @@
-{% comment %} Future Feature {% endcomment %}
-
 {% extends 'base.html' %}
 {% load static%}
 
@@ -9,17 +7,14 @@
 {% endblock %}
 
 {% block content %}
-<div class="page-header">
-  <h1>Select Your Color Scheme </h1>
-</div>
-
-<section class="color-container">
-  
+<section class="color-container">  
+  {{cur_theme}}
   <div class="page-content">
-    <div class="pink">
+    <h1>Select Your Color Scheme </h1>
+    <a href="{% url 'set-theme' "pink" %}">
       <i class="fa-solid fa-brush pink"></i>
       Pink
-    </div>
+    </a>
     <div class="yellow">
       <i class="fa-solid fa-brush yellow"></i>
       Yellow

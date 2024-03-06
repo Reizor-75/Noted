@@ -7,13 +7,15 @@
 .card-container{  
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   background-color: white;
   border: var(--card-border);
   box-shadow: var(--card-box-shadow);
+  font-size: var(--font-l);
   width: 90%;
   max-width: 550px;
-
+  min-height: 200px;
 }
 
 .card{

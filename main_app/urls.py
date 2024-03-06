@@ -12,5 +12,6 @@ urlpatterns = [
   path('accounts/signup/', views.signup, name='signup'),
 
   # FUTURE FEATURE
-  # path('color_scheme/', views.set_color, name='set-color'),
+  path('theme/', views.view_theme, name='view-theme'),
+  path('theme/<color>', views.set_theme, name='set-theme'),
 ]

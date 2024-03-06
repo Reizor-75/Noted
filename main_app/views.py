@@ -1,5 +1,5 @@
 from django.shortcuts import render, redirect
-from .models import Note
+from .models import Note, Theme
 from django.views.generic.edit import CreateView, UpdateView, DeleteView
 from django.contrib.auth.views import LoginView
 from django.contrib.auth import login
@@ -62,5 +62,20 @@ def signup(request):
   context = {'form': form, 'error_message': error_message}
   return render(request, 'signup.html', context)
 
-def set_color(request):
+@login_required
+def view_theme(request):
   return render(request, 'changeStyle.html')
+
+@login_required
+def set_theme(request, color):
+  cur_theme = Theme.objects.filter(user=request.user)
+  if cur_theme.exists():
+    user_theme = Theme.objects.get(user=request.user)
+    user_theme.color = color
+    user_theme.save()
+  else:
+    user_theme = Theme(user=request.user, color=color)
+    user_theme.save()
+
+  user_theme = Theme.objects.get(user=request.user)
+  return render(request,'changeStyle.html', {'theme': user_theme})
