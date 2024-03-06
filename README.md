@@ -6,8 +6,7 @@ Inspired by the Cornell Notes System, **Noted** is a place for you to track your
 
 **Noted** is designed to be used on both desktop and mobile devices, and allows signed in users to select their own color-way and fonts to customised their own theme.
 
-<img src="./main_app/static/images/noted-detail-page.png" alt="Noted Home Page" height="400"/>
-<img src="./main_app/static/images/noted-edit-page.png" alt="Noted Home Page" 
+<img src="./main_app/static/images/noted-detail-page.png" alt="Noted Home Page" height="400"/><img src="./main_app/static/images/noted-edit-page.png" alt="Noted Home Page" 
 height="400"/>
 
 
