@@ -21,9 +21,15 @@
   <script src="https://kit.fontawesome.com/2188847cca.js" crossorigin="anonymous"></script>
 
   <link rel="stylesheet" type="text/css" href="{% static 'css/base.css' %}">
-  {% if theme.color == "pink" %}
-    <link rel="stylesheet" type="text/css" href="{% static 'css/pink.css' %}">    
-  {% else %}    
+  
+  {% if THEME == "pink" %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/colors/pink.css' %}">      
+  {% elif THEME == "yellow" %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/colors/yellow.css' %}">           
+  {% elif THEME == "mint" %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/colors/mint.css' %}">   
+  {% elif THEME == "lavendar" %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/colors/lavendar.css' %}">     
   {% endif%}
 
   <title>Noted</title>

@@ -10,8 +10,6 @@ urlpatterns = [
   path('notes/<int:pk>/update/', views.NoteUpdate.as_view(), name='note-update'),
   path('notes/<int:pk>/delete/', views.NoteDelete.as_view(), name='note-delete'),
   path('accounts/signup/', views.signup, name='signup'),
-
-  # FUTURE FEATURE
   path('theme/', views.view_theme, name='view-theme'),
   path('theme/<color>', views.set_theme, name='set-theme'),
 ]

@@ -30,4 +30,4 @@ class Note(models.Model):
       })
 
   def format_key(self):
-    return self.key.split(", ")
+    return self.key.split(" ")

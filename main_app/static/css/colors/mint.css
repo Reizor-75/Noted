@@ -1,0 +1,5 @@
+:root {
+  --main: rgba(191, 248, 183, 0.9);
+  --hightlight: rgba(191, 248, 183, .5);
+  --button-hover-color: rgb(89, 151, 42);
+}

@@ -43,29 +43,6 @@ body {
   --card-border-radius: 6px;
 }
 
-/* 
-future feature
-
-
-.yellow{
-  --main: rgba(250, 242, 201, 0.9);
-  --hightlight: rgba(250, 242, 201, .5);
-  --button-hover-color: rgb(162, 114, 0);
-}
-
-.mint{
-  --main: rgba(191, 248, 183, 0.9);
-  --hightlight: rgba(250, 242, 201, .5);
-  --button-hover-color: rgb(89, 151, 42);
-}
-
-
-.grey{  
-  --main: rgba(187, 187, 187, 0.9);
-  --hightlight: rgba(187, 187, 187 .5);
-  --button-hover-color: rgb(78, 78, 78);
-} */
-
 header {
   width: 100%;
   background: var(--main);

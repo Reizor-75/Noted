@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+{% load static%}
+
+{% block head %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/change-style.css' %}">
+<script defer src="{% static 'js/change-style.js' %}"></script>
+{% endblock %}
+
+{% block content %}
+<section class="color-container">
+  <h1>Select Your Color Scheme </h1>  
+  <div class="page-content">
+    <div class="color selection">
+      <a href="{% url 'set-theme' "pink" %}">
+        <i class="fa-solid fa-brush pink"></i>
+        Pink
+      </a>
+      <a href="{% url 'set-theme' "yellow" %}">
+        <i class="fa-solid fa-brush yellow"></i>
+        Yellow
+      </a>
+      <a href="{% url 'set-theme' "mint" %}">
+        <i class="fa-solid fa-brush mint"></i>
+        Mint
+      </a>    
+      <a href="{% url 'set-theme' " " %}">
+        <i class="fa-solid fa-brush sky"></i>
+        Sky
+      </a>
+      <a href="{% url 'set-theme' "lavendar" %}">
+        <i class="fa-solid fa-brush lavendar"></i>
+        Lavendar
+      </a>
+      <a href="{% url 'set-theme' "lavendar" %}">
+        <i class="fa-solid fa-brush lavendar"></i>
+        grey
+      </a>  
+    </div>
+    <div class="font selection">
+      <a href="{% url 'set-theme' "1" %}">
+        <i class="fa-solid fa-pencil"></i>
+        <span class="Short-Stack">Short Stack</span>
+      </a>    
+      <a href="{% url 'set-theme' "2" %}">
+        <i class="fa-solid fa-pencil"></i>
+        <span class="architects-daughter">Architects Daughter</span>
+      </a>    
+      <a href="{% url 'set-theme' "3" %}">
+        <i class="fa-solid fa-pencil"></i>
+        <span class="shadows-into-light">Shadows Into Light</span>
+      </a>
+    
+  
+    </div>
+  </div>
+</section>
+
+{% endblock %}

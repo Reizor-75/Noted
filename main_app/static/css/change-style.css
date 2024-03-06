@@ -1,0 +1,66 @@
+section {  
+  width: 90%;
+  max-width: 550px;
+  min-height: 40vh;
+  padding: 10px;
+  margin: 8px 0;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border: var(--card-border);
+  box-shadow: var(--card-box-shadow);
+}
+
+h1{
+  width: 100%;
+  font-size: var(--font-xl);
+  padding:4px 0;
+  border-bottom: solid 2px red;
+}
+
+.page-content{
+  display: flex;
+}
+
+.selection{
+  display:flex;
+  flex-direction: column;
+  margin-right: auto;
+}
+
+i{
+  color: black;
+}
+
+.pink{
+  color: rgb(158, 16, 87);
+}
+
+.yellow{
+  color: rgb(162, 114, 0);
+}
+
+.mint{
+  color: rgb(89, 151, 42);
+}
+
+.sky{
+  color: rgb(16, 56, 158);
+}
+
+.lavendar{  
+  color: rgb(124, 42, 151);
+}
+
+.short-stack{
+  font-family: "Short Stack";
+}
+
+.architects-daughter{
+  font-family: "Architects Daughter";
+}
+
+.shadows-into-light{
+  font-family: "Shadows Into Light";
+  font-weight: 600;
+}

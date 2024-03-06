@@ -23,7 +23,7 @@ h1{
   margin: 20px 0;  
   width: 90%;
   max-width: 550px;
-  height: 40vh;
+  min-height: 30vh;
   max-height: 300px; 
 }
 

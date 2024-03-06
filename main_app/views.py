@@ -64,7 +64,7 @@ def signup(request):
 
 @login_required
 def view_theme(request):
-  return render(request, 'changeStyle.html')
+  return render(request, 'change-style.html')
 
 @login_required
 def set_theme(request, color):
@@ -76,6 +76,4 @@ def set_theme(request, color):
   else:
     user_theme = Theme(user=request.user, color=color)
     user_theme.save()
-
-  user_theme = Theme.objects.get(user=request.user)
-  return render(request,'changeStyle.html', {'theme': user_theme})
+  return redirect('view-theme')
