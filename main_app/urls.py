@@ -12,4 +12,5 @@ urlpatterns = [
   path('accounts/signup/', views.signup, name='signup'),
   path('theme/', views.view_theme, name='view-theme'),
   path('theme/<color>', views.set_theme, name='set-theme'),
+  path('theme/font/<font>', views.set_font, name='set-font'),
 ]

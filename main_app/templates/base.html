@@ -16,12 +16,12 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Shadows+Into+Light&family=Short+Stack&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Patrick+Hand+SC&family=Shadows+Into+Light&family=Short+Stack&display=swap" rel="stylesheet">
 
   <script src="https://kit.fontawesome.com/2188847cca.js" crossorigin="anonymous"></script>
 
   <link rel="stylesheet" type="text/css" href="{% static 'css/base.css' %}">
-  
+
   {% if THEME == "pink" %}
     <link rel="stylesheet" type="text/css" href="{% static 'css/colors/pink.css' %}">      
   {% elif THEME == "yellow" %}
@@ -32,6 +32,15 @@
     <link rel="stylesheet" type="text/css" href="{% static 'css/colors/lavendar.css' %}">     
   {% endif%}
 
+  {% if FONT == "2" %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/fonts/AD.css' %}">      
+  {% elif FONT == "3" %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/fonts/SIL.css' %}">     
+    <link rel="stylesheet" type="text/css" href="{% static 'css/fonts/AD.css' %}">      
+  {% elif FONT == "4" %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/fonts/PH.css' %}">     
+  {% endif%}
+  
   <title>Noted</title>
   {% block head %}
   {% endblock %}

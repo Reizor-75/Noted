@@ -31,25 +31,28 @@
         <i class="fa-solid fa-brush lavendar"></i>
         Lavendar
       </a>
-      <a href="{% url 'set-theme' "lavendar" %}">
+      {% comment %} <a href="{% url 'set-theme' "lavendar" %}">
         <i class="fa-solid fa-brush lavendar"></i>
         grey
-      </a>  
+      </a>   {% endcomment %}
     </div>
     <div class="font selection">
-      <a href="{% url 'set-theme' "1" %}">
+      <a href="{% url 'set-font' "1" %}">
         <i class="fa-solid fa-pencil"></i>
-        <span class="Short-Stack">Short Stack</span>
+        <span class="short-stack">Short Stack</span>
       </a>    
-      <a href="{% url 'set-theme' "2" %}">
+      <a href="{% url 'set-font' "2" %}">
         <i class="fa-solid fa-pencil"></i>
         <span class="architects-daughter">Architects Daughter</span>
       </a>    
-      <a href="{% url 'set-theme' "3" %}">
+      <a href="{% url 'set-font' "3" %}">
         <i class="fa-solid fa-pencil"></i>
         <span class="shadows-into-light">Shadows Into Light</span>
       </a>
-    
+      <a href="{% url 'set-font' "4" %}">
+        <i class="fa-solid fa-pencil"></i>
+        <span class="patrick-hand">Patrick Hand</span>
+      </a>
   
     </div>
   </div>

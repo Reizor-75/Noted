@@ -7,6 +7,7 @@ from django.urls import reverse
 class Theme(models.Model):  
   user = models.ForeignKey(User, on_delete=models.CASCADE)  
   color = models.CharField(max_length=100)
+  font = models.CharField(max_length=1)
   
   def __str__(self):
     return f"{self.color}"

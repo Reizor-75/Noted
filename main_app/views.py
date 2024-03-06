@@ -77,3 +77,15 @@ def set_theme(request, color):
     user_theme = Theme(user=request.user, color=color)
     user_theme.save()
   return redirect('view-theme')
+
+@login_required
+def set_font(request, font):
+  cur_theme = Theme.objects.filter(user=request.user)
+  if cur_theme.exists():
+    user_theme = Theme.objects.get(user=request.user)
+    user_theme.font = font
+    user_theme.save()
+  else:
+    user_theme = Theme(user=request.user, font=font)
+    user_theme.save()
+  return redirect('view-theme')
