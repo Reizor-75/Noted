@@ -1,4 +1,14 @@
-# Noted <img src="./main_app/static/images/noted-favi.png" alt="Noted Icon" width="50"/>
+# Noted <img src="./main_app/static/images/noted-favi.png" alt="Noted Icon" width="30"/>
+
+<img src="./main_app/static/images/noted-home-page.png" alt="Noted Home Page" height="400"/>
+
+Inspired by the Cornell Notes System, **Noted** is a place for you to track your notes in an organized manner as you continue your path through education. **Noted** sorts your notes by subjects to allow easy navigation to specific notes, and allows you to edit or delete them when no longer in use. 
+
+**Noted** is designed to be used on both desktop and mobile devices, and allows signed in users to select their own color-way and fonts to customised their own theme.
+
+<img src="./main_app/static/images/noted-detail-page.png" alt="Noted Home Page" height="400"/>
+<img src="./main_app/static/images/noted-edit-page.png" alt="Noted Home Page" 
+height="400"/>
 
 
 ## Getting Started ✅
