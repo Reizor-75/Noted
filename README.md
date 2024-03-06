@@ -12,7 +12,7 @@ height="400"/>
 
 
 ## Getting Started ✅
-🌐[Noted]() 
+🌐[Noted](https://noted-ml.fly.dev/) 
 
 🗒️[Planning Materials](https://trello.com/b/m9fyUYR0/michelle-linares-noted)
 
