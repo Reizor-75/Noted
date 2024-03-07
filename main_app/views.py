@@ -46,7 +46,7 @@ class NoteUpdate(LoginRequiredMixin, UpdateView):
 
 class NoteDelete(LoginRequiredMixin, DeleteView):
   model = Note
-  success_url = '/notes/'
+  success_url = '/subjects/'
 
 def signup(request):
   error_message = ''
