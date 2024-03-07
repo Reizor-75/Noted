@@ -28,8 +28,10 @@ h1{
   margin-right: auto;
 }
 
-i{
-  color: black;
+.font {
+  i{
+    color: black;
+  }
 }
 
 .pink{
