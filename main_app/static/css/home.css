@@ -29,7 +29,6 @@ h1{
 .login {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   width: 100%;
 }
@@ -38,6 +37,7 @@ h1{
   display: flex;
   justify-content: space-between;
   width: 100%;
+  margin-top: 32px;
 }
 
 .login label {
