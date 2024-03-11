@@ -18,6 +18,8 @@ height="550"/>
 ## Attributions 📣
 **[Reintech.io](https://reintech.io/blog/writing-a-custom-template-context-processor-in-django)** wrote a blog post explaining how to used Custom Template Context Processors in Django, which was used to create different themes on **Noted**.
 
+**Calendar** **Noted** uses MCDP for its calendar.
+
 **Font:** 
 **Noted** uses [Short Stack](https://fonts.google.com/specimen/Short+Stack), [Architects Daughter](https://fonts.google.com/specimen/Architects+Daughter), [Short Stack](https://fonts.google.com/specimen/Short+Stack),
 [Shadow Into Light Two](https://fonts.google.com/specimen/Shadows+Into+Light+Two). Sourced from [fonts.google.com](https://fonts.google.com/).
