@@ -24,7 +24,7 @@ height="550"/>
 **Noted** uses [Short Stack](https://fonts.google.com/specimen/Short+Stack), [Architects Daughter](https://fonts.google.com/specimen/Architects+Daughter), [Short Stack](https://fonts.google.com/specimen/Short+Stack),
 [Shadow Into Light Two](https://fonts.google.com/specimen/Shadows+Into+Light+Two). Sourced from [fonts.google.com](https://fonts.google.com/).
 
-**Image Assets:** **Noted** uses Icons sourced from [fontawesome.com](https://fontawesome.com/). 
+**Image Assets:** **Noted** uses Icons sourced from [fontawesome.com](https://fontawesome.com/) and grid background sourced from [Hero Patterns](https://heropatterns.com/) 
 
 ## Technologies used 🖥
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
